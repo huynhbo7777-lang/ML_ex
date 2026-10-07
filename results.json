@@ -1,0 +1,303 @@
+{
+  "seed": 42,
+  "best_C": 1.0,
+  "data": [
+    {
+      "split": "reg_train",
+      "samples": 353,
+      "features": 10,
+      "missing_cells": 0
+    },
+    {
+      "split": "reg_test",
+      "samples": 89,
+      "features": 10,
+      "missing_cells": 0
+    },
+    {
+      "split": "clf_train",
+      "samples": 341,
+      "features": 30,
+      "missing_cells": 0
+    },
+    {
+      "split": "clf_val",
+      "samples": 114,
+      "features": 30,
+      "missing_cells": 0
+    },
+    {
+      "split": "clf_test",
+      "samples": 114,
+      "features": 30,
+      "missing_cells": 0
+    }
+  ],
+  "scaling": [
+    {
+      "feature": "mean radius",
+      "validation_value_x": 13.87,
+      "train_mean_mu": 14.030343108504399,
+      "train_scale_s": 3.5455611374840594,
+      "z": -0.045223619699921266
+    },
+    {
+      "feature": "mean texture",
+      "validation_value_x": 20.7,
+      "train_mean_mu": 19.18375366568915,
+      "train_scale_s": 4.522277472096037,
+      "z": 0.3352837908922211
+    },
+    {
+      "feature": "mean area",
+      "validation_value_x": 584.8,
+      "train_mean_mu": 646.4419354838709,
+      "train_scale_s": 352.4312780095164,
+      "z": -0.1749048377091164
+    },
+    {
+      "feature": "mean smoothness",
+      "validation_value_x": 0.09578,
+      "train_mean_mu": 0.09656263929618766,
+      "train_scale_s": 0.013504333856833278,
+      "z": -0.057954676216157006
+    }
+  ],
+  "regression": [
+    {
+      "model": "Ridge",
+      "split": "train",
+      "MAE": 43.49472191293795,
+      "MSE": 2870.296117291624,
+      "RMSE": 53.57514458488772,
+      "R2": 0.5276319768458047
+    },
+    {
+      "model": "Ridge",
+      "split": "test",
+      "MAE": 42.81199941834889,
+      "MSE": 2892.0145657501735,
+      "RMSE": 53.7774540653439,
+      "R2": 0.454146520706982
+    },
+    {
+      "model": "Mean train target",
+      "split": "test",
+      "MAE": 64.00646146990485,
+      "MSE": 5361.533457238513,
+      "RMSE": 73.22249283682244,
+      "R2": -0.011962984778542296
+    }
+  ],
+  "error_cases": [
+    {
+      "test_position": 61,
+      "original_row": 56,
+      "actual": 52.0,
+      "predicted": 205.38638318578083,
+      "residual": -153.38638318578083,
+      "squared_error": 23527.382546815188
+    },
+    {
+      "test_position": 46,
+      "original_row": 77,
+      "actual": 200.0,
+      "predicted": 73.59231770375355,
+      "residual": 126.40768229624645,
+      "squared_error": 15978.902143508778
+    },
+    {
+      "test_position": 1,
+      "original_row": 211,
+      "actual": 70.0,
+      "predicted": 179.95824059933244,
+      "residual": -109.95824059933244,
+      "squared_error": 12090.814675700682
+    },
+    {
+      "test_position": 20,
+      "original_row": 9,
+      "actual": 310.0,
+      "predicted": 207.27026897438122,
+      "residual": 102.72973102561878,
+      "squared_error": 10553.39763659598
+    }
+  ],
+  "tuning": [
+    {
+      "C": 0.01,
+      "train_F1": 0.963963963963964,
+      "validation_F1": 0.9530201342281879
+    },
+    {
+      "C": 0.1,
+      "train_F1": 0.9906976744186047,
+      "validation_F1": 0.9793103448275862
+    },
+    {
+      "C": 1.0,
+      "train_F1": 0.9906976744186047,
+      "validation_F1": 0.993006993006993
+    },
+    {
+      "C": 10.0,
+      "train_F1": 0.9906542056074766,
+      "validation_F1": 0.971830985915493
+    }
+  ],
+  "classification": [
+    {
+      "model": "Logistic",
+      "split": "train",
+      "Accuracy": 0.9882697947214076,
+      "Precision_1": 0.9861111111111112,
+      "Recall_1": 0.9953271028037384,
+      "F1_1": 0.9906976744186047
+    },
+    {
+      "model": "Logistic",
+      "split": "validation",
+      "Accuracy": 0.9912280701754386,
+      "Precision_1": 0.9861111111111112,
+      "Recall_1": 1.0,
+      "F1_1": 0.993006993006993
+    },
+    {
+      "model": "Logistic",
+      "split": "test",
+      "Accuracy": 0.9824561403508771,
+      "Precision_1": 0.9861111111111112,
+      "Recall_1": 0.9861111111111112,
+      "F1_1": 0.9861111111111112
+    },
+    {
+      "model": "Tree",
+      "split": "train",
+      "Accuracy": 0.9853372434017595,
+      "Precision_1": 0.9906103286384976,
+      "Recall_1": 0.985981308411215,
+      "F1_1": 0.9882903981264637
+    },
+    {
+      "model": "Tree",
+      "split": "validation",
+      "Accuracy": 0.9385964912280702,
+      "Precision_1": 0.9444444444444444,
+      "Recall_1": 0.9577464788732394,
+      "F1_1": 0.951048951048951
+    },
+    {
+      "model": "Tree",
+      "split": "test",
+      "Accuracy": 0.9122807017543859,
+      "Precision_1": 0.9696969696969697,
+      "Recall_1": 0.8888888888888888,
+      "F1_1": 0.927536231884058
+    }
+  ],
+  "matrices": {
+    "Logistic_validation": [
+      [
+        42,
+        1
+      ],
+      [
+        0,
+        71
+      ]
+    ],
+    "Logistic_test": [
+      [
+        41,
+        1
+      ],
+      [
+        1,
+        71
+      ]
+    ],
+    "Tree_validation": [
+      [
+        39,
+        4
+      ],
+      [
+        3,
+        68
+      ]
+    ],
+    "Tree_test": [
+      [
+        40,
+        2
+      ],
+      [
+        8,
+        64
+      ]
+    ]
+  },
+  "thresholds": [
+    {
+      "threshold": 0.3,
+      "positive_count": 74,
+      "TN": 40,
+      "FP": 3,
+      "FN": 0,
+      "TP": 71,
+      "Precision_1": 0.9594594594594594,
+      "Recall_1": 1.0,
+      "F1_1": 0.9793103448275862
+    },
+    {
+      "threshold": 0.4,
+      "positive_count": 73,
+      "TN": 41,
+      "FP": 2,
+      "FN": 0,
+      "TP": 71,
+      "Precision_1": 0.9726027397260274,
+      "Recall_1": 1.0,
+      "F1_1": 0.9861111111111112
+    },
+    {
+      "threshold": 0.5,
+      "positive_count": 72,
+      "TN": 42,
+      "FP": 1,
+      "FN": 0,
+      "TP": 71,
+      "Precision_1": 0.9861111111111112,
+      "Recall_1": 1.0,
+      "F1_1": 0.993006993006993
+    },
+    {
+      "threshold": 0.6,
+      "positive_count": 70,
+      "TN": 42,
+      "FP": 1,
+      "FN": 2,
+      "TP": 69,
+      "Precision_1": 0.9857142857142858,
+      "Recall_1": 0.971830985915493,
+      "F1_1": 0.9787234042553191
+    },
+    {
+      "threshold": 0.7,
+      "positive_count": 70,
+      "TN": 42,
+      "FP": 1,
+      "FN": 2,
+      "TP": 69,
+      "Precision_1": 0.9857142857142858,
+      "Recall_1": 0.971830985915493,
+      "F1_1": 0.9787234042553191
+    }
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "sklearn": "1.8.0",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5"
+  }
+}

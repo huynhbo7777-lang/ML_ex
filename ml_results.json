@@ -1,0 +1,43 @@
+{
+    "student_id": "24701841",
+    "configuration": {
+        "scaler_type": "minmax",
+        "impute_strategy": "mean", 
+        "reg_type": "lasso",
+        "reg_alpha": 0.9,
+        "max_depth": 3,
+        "logreg_c": 1.0,
+        "student_seed": 1841
+    },
+    "dataset_shape": {
+        "n_train": 882,
+        "n_test": 294,
+        "n_features": 43
+    },
+    "preprocessing_stats": {
+        "first_numeric_feature": "Age",
+        "imputer_val_0": 37.1706,
+        "scaler_center_0": 18.0,
+        "scaler_scale_0": 0.02381,
+        "scaler_range_0": 42.0,
+        "scaler_min_0": -0.428571
+    },
+    "regression_results": {
+        "train_mse": 1184613.7983,
+        "test_mse": 1551947.1229,
+        "intercept": 2872.3788,
+        "zero_coef_count": 5,
+        "zero_coef_count_interpretation": "sparsity_count"
+    },
+    "classification_results": {
+        "logreg_train_acc": 0.8923,
+        "logreg_test_acc": 0.8946,
+        "logreg_test_f1": 0.5079,
+        "tree_train_acc": 0.8696,
+        "tree_test_acc": 0.8367,
+        "tree_test_f1": 0.1111,
+        "tree_depth": 3,
+        "tree_leaves": 8,
+        "root_feature": "TotalWorkingYears"
+    }
+}

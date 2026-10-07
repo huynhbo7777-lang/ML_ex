@@ -1,0 +1,52 @@
+N1
+    split  samples  features  missing_cells
+reg_train      353        10              0
+ reg_test       89        10              0
+clf_train      341        30              0
+  clf_val      114        30              0
+ clf_test      114        30              0
+
+N2
+        feature  validation_value_x  train_mean_mu  train_scale_s         z
+    mean radius            13.87000      14.030343       3.545561 -0.045224
+   mean texture            20.70000      19.183754       4.522277  0.335284
+      mean area           584.80000     646.441935     352.431278 -0.174905
+mean smoothness             0.09578       0.096563       0.013504 -0.057955
+
+N3
+            model split       MAE         MSE      RMSE        R2
+            Ridge train 43.494722 2870.296117 53.575145  0.527632
+            Ridge  test 42.811999 2892.014566 53.777454  0.454147
+Mean train target  test 64.006461 5361.533457 73.222493 -0.011963
+
+N3_cases
+ test_position  original_row  actual  predicted    residual  squared_error
+            61            56    52.0 205.386383 -153.386383   23527.382547
+            46            77   200.0  73.592318  126.407682   15978.902144
+             1           211    70.0 179.958241 -109.958241   12090.814676
+            20             9   310.0 207.270269  102.729731   10553.397637
+
+N4
+    C  train_F1  validation_F1
+ 0.01  0.963964       0.953020
+ 0.10  0.990698       0.979310
+ 1.00  0.990698       0.993007
+10.00  0.990654       0.971831
+
+N5
+   model      split  Accuracy  Precision_1  Recall_1     F1_1
+Logistic      train  0.988270     0.986111  0.995327 0.990698
+Logistic validation  0.991228     0.986111  1.000000 0.993007
+Logistic       test  0.982456     0.986111  0.986111 0.986111
+    Tree      train  0.985337     0.990610  0.985981 0.988290
+    Tree validation  0.938596     0.944444  0.957746 0.951049
+    Tree       test  0.912281     0.969697  0.888889 0.927536
+
+N6
+ threshold  positive_count  TN  FP  FN  TP  Precision_1  Recall_1     F1_1
+       0.3              74  40   3   0  71     0.959459  1.000000 0.979310
+       0.4              73  41   2   0  71     0.972603  1.000000 0.986111
+       0.5              72  42   1   0  71     0.986111  1.000000 0.993007
+       0.6              70  42   1   2  69     0.985714  0.971831 0.978723
+       0.7              70  42   1   2  69     0.985714  0.971831 0.978723
+
